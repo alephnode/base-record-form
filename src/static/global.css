@@ -10,7 +10,7 @@ body,
   background: var(--primary-bg-color);
   color: var(--primary-txt-color);
   font-family: 'Times New Roman';
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.5px;

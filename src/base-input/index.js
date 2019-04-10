@@ -9,8 +9,8 @@ const Centered = styled('div', {
   height: '100%',
 })
 
-export default () => (
+export default props => (
   <Centered>
-    <StatefulInput />
+    <StatefulInput placeholder={props.placeholder} />
   </Centered>
 )
