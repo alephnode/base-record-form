@@ -5,12 +5,15 @@
   "license": "MIT",
   "dependencies": {
     "@emotion/core": "^10.0.10",
+    "baseui": "^6.13.0",
     "emotion": "^10.0.9",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-motion": "^0.5.2",
     "react-router": "^5.0.0",
-    "react-router-dom": "^5.0.0"
+    "react-router-dom": "^5.0.0",
+    "styletron-engine-atomic": "^1.1.0",
+    "styletron-react": "^4.4.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
