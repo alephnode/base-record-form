@@ -6,11 +6,16 @@ const Centered = styled('div', {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  height: '100%',
+  margin: '20px',
 })
 
 export default props => (
   <Centered>
-    <StatefulInput placeholder={props.placeholder} />
+    <StatefulInput
+      name={props.name}
+      onChange={props.onChange}
+      value={props.value}
+      placeholder={props.placeholder}
+    />
   </Centered>
 )

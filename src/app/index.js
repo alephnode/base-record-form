@@ -12,6 +12,9 @@ const BaseStyles = styled('div', {
   flexDirection: 'column',
   alignItems: 'center',
   height: 'calc(100% - 20px)',
+  fontFamily:
+    '-apple-system, BlinkMacSystemFont, HelveticaNeue, Helvetica, Roboto, Arial, sans-serif',
+  textRendering: 'optimizeLegibility',
 })
 
 export default () => (
