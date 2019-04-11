@@ -17,14 +17,24 @@ const BaseStyles = styled('div', {
   textRendering: 'optimizeLegibility',
 })
 
+const FormContainer = styled('div', {
+  width: '95%',
+  maxWidth: '480px',
+  margin: '0 auto',
+})
+
+const headingStyles = {
+  marginBottom: '1rem',
+}
+
 export default () => (
   <StyletronProvider value={engine}>
     <ThemeProvider theme={LightTheme}>
       <BaseStyles>
-        Please complete the form below.
-        <div>
+        <div style={headingStyles}>Please complete the form below.</div>
+        <FormContainer>
           <Form />
-        </div>
+        </FormContainer>
       </BaseStyles>
     </ThemeProvider>
   </StyletronProvider>

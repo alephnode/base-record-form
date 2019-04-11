@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import FormButton from '../form-button'
 import BaseInput from '../base-input'
+import { styled } from 'baseui'
 
 export default () => {
   const [values, setValues] = useState({})
@@ -15,6 +16,11 @@ export default () => {
 
   const handleChange = ({ target: { name, value } }) =>
     setValues({ ...values, [name]: value })
+
+  const ButtonContainer = styled('div', {
+    width: '95%',
+    textAlign: 'right',
+  })
 
   return (
     <>
@@ -36,7 +42,15 @@ export default () => {
         onChange={handleChange}
         placeholder="Color Variant"
       />
-      <FormButton isLoading={isLoading} onClick={handleClick} />
+      <BaseInput
+        name="genre"
+        value={values.genre}
+        onChange={handleChange}
+        placeholder="Genre"
+      />
+      <ButtonContainer>
+        <FormButton isLoading={isLoading} onClick={handleClick} />
+      </ButtonContainer>
     </>
   )
 }
