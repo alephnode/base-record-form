@@ -5,7 +5,7 @@ const buttonStyles = {
   background: '#212121',
 }
 
-export default props => (
+const BaseButton = props => (
   <Button
     isLoading={props.isLoading}
     onClick={props.onClick}
@@ -14,3 +14,5 @@ export default props => (
     Submit
   </Button>
 )
+
+export default BaseButton

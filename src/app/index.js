@@ -1,5 +1,8 @@
 import React from 'react'
-import Form from '../form'
+import { Route } from 'react-router-dom'
+import { withRouter } from 'react-router'
+import NewRecord from '../pages/new-record'
+import Home from '../pages/home'
 import { Client as Styletron } from 'styletron-engine-atomic'
 import { Provider as StyletronProvider } from 'styletron-react'
 import { LightTheme, ThemeProvider, styled } from 'baseui'
@@ -17,25 +20,15 @@ const BaseStyles = styled('div', {
   textRendering: 'optimizeLegibility',
 })
 
-const FormContainer = styled('div', {
-  width: '95%',
-  maxWidth: '480px',
-  margin: '0 auto',
-})
-
-const headingStyles = {
-  marginBottom: '1rem',
-}
-
-export default () => (
+const App = () => (
   <StyletronProvider value={engine}>
     <ThemeProvider theme={LightTheme}>
       <BaseStyles>
-        <div style={headingStyles}>Please complete the form below.</div>
-        <FormContainer>
-          <Form />
-        </FormContainer>
+        <Route exact path="/" component={Home} />
+        <Route path="/new-record" component={NewRecord} />
       </BaseStyles>
     </ThemeProvider>
   </StyletronProvider>
 )
+
+export default withRouter(App)

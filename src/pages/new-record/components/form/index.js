@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import FormButton from '../form-button'
-import BaseInput from '../base-input'
+import BaseButton from '../../../../common/components/base-button'
+import BaseInput from '../../../../common/components/base-input'
 import { styled } from 'baseui'
 
 export default () => {
@@ -49,7 +49,7 @@ export default () => {
         placeholder="Genre"
       />
       <ButtonContainer>
-        <FormButton isLoading={isLoading} onClick={handleClick} />
+        <BaseButton isLoading={isLoading} onClick={handleClick} />
       </ButtonContainer>
     </>
   )
