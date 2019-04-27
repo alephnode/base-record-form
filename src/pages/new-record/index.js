@@ -1,6 +1,7 @@
 import React from 'react'
 import Form from './components/form'
 import { styled } from 'baseui'
+import BaseButton from '../../common/components/base-button'
 
 const headingStyles = {
   marginBottom: '1rem',
@@ -17,6 +18,7 @@ const NewRecord = () => (
     <div style={headingStyles}>Please complete the form below.</div>
     <FormContainer>
       <Form />
+      <BaseButton href="/">Go Home</BaseButton>
     </FormContainer>
   </>
 )

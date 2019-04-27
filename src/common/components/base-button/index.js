@@ -10,8 +10,20 @@ const BaseButton = props => (
     isLoading={props.isLoading}
     onClick={props.onClick}
     style={buttonStyles}
+    overrides={
+      props.href
+        ? {
+            BaseButton: {
+              props: {
+                $as: 'a',
+              },
+            },
+          }
+        : {}
+    }
+    href={props.href}
   >
-    Submit
+    {props.children}
   </Button>
 )
 

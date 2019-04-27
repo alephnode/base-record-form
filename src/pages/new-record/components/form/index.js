@@ -49,7 +49,9 @@ export default () => {
         placeholder="Genre"
       />
       <ButtonContainer>
-        <BaseButton isLoading={isLoading} onClick={handleClick} />
+        <BaseButton isLoading={isLoading} onClick={handleClick}>
+          Submit
+        </BaseButton>
       </ButtonContainer>
     </>
   )
