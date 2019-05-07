@@ -18,7 +18,6 @@ const NewRecord = () => (
     <div style={headingStyles}>Please complete the form below.</div>
     <FormContainer>
       <Form />
-      <BaseButton href="/">Go Home</BaseButton>
     </FormContainer>
   </>
 )

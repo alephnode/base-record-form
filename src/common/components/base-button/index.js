@@ -1,15 +1,11 @@
 import React from 'react'
-import { Button } from 'baseui/button'
-
-const buttonStyles = {
-  background: '#212121',
-}
+import { Button, KIND } from 'baseui/button'
 
 const BaseButton = props => (
   <Button
     isLoading={props.isLoading}
     onClick={props.onClick}
-    style={buttonStyles}
+    kind={props.secondary ? KIND.secondary : KIND.primary}
     overrides={
       props.href
         ? {

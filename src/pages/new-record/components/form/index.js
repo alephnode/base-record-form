@@ -18,8 +18,10 @@ export default () => {
     setValues({ ...values, [name]: value })
 
   const ButtonContainer = styled('div', {
-    width: '95%',
-    textAlign: 'right',
+    width: '92%',
+    display: 'flex',
+    justifyContent: 'space-between',
+    margin: '1.5rem auto'
   })
 
   return (
@@ -49,6 +51,7 @@ export default () => {
         placeholder="Genre"
       />
       <ButtonContainer>
+        <BaseButton secondary href="/">Go Home</BaseButton>
         <BaseButton isLoading={isLoading} onClick={handleClick}>
           Submit
         </BaseButton>
